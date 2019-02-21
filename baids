@@ -9,7 +9,7 @@ export GIT_REPO="https://github.com/rcmorano/baids.git"
 INSTALL=$1
 if [[ "$INSTALL" == "install" ]]
 then
-    BASH_RC="${HOME}/.bashrc"
+    BASH_RC="${HOME}/.bash_profile"
     ZSH_RC="${HOME}/.zshrc"
     git clone $GIT_REPO "$BAIDS_HOME"
     if [ -f "$BASH_RC" ]
